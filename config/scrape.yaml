@@ -1,0 +1,50 @@
+params:
+  header               : "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+  start_year           : 2001
+  end_year             : 2024
+  skip_size            : 100
+  projected_crs        : "EPSG:4326"
+
+granules:
+  amazon:
+    - "00N_080W"
+    - "00N_070W"
+    - "00N_060W"
+    - "00N_050W"
+    - "10S_080W"
+    - "10S_070W"
+    - "10S_060W"
+    - "10S_050W"
+    - "10N_080W"
+    - "10N_070W"
+    - "10N_060W"
+    - "10N_050W"
+  brazil:
+    - "00N_080W"
+    - "00N_070W"
+    - "00N_060W"
+    - "00N_050W"
+    - "00N_040W"
+    - "10S_080W"
+    - "10S_070W"
+    - "10S_060W"
+    - "10S_050W"
+    - "10S_040W"
+    - "10N_080W"
+    - "10N_070W"
+    - "10N_060W"
+    - "10N_050W"
+    - "20S_060W"
+    - "20S_050W"
+    - "30S_060W"
+    
+urls:
+  gfc_tree_cover   : "https://storage.googleapis.com/earthenginepartners-hansen/GFC-2024-v1.12/Hansen_GFC-2024-v1.12_treecover2000_{GRANULE}.tif"
+  gfc_loss_year    : "https://storage.googleapis.com/earthenginepartners-hansen/GFC-2024-v1.12/Hansen_GFC-2024-v1.12_lossyear_{GRANULE}.tif"
+  gfc_datamask     : "https://storage.googleapis.com/earthenginepartners-hansen/GFC-2024-v1.12/Hansen_GFC-2024-v1.12_datamask_{GRANULE}.tif"
+  funai_tis        : "https://geoserver.funai.gov.br/geoserver/Funai/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=Funai%3Atis_poligonais&maxFeatures=10000&outputFormat=SHAPE-ZIP"
+  funai_aldeias    : "https://geoserver.funai.gov.br/geoserver/Funai/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=Funai:aldeias_pontos&outputFormat=SHAPE-ZIP"
+  ibge_amazon_mun  : "https://geoftp.ibge.gov.br/organizacao_do_territorio/estrutura_territorial/amazonia_legal/2024/Mun_Amazonia_Legal_2024_shp.zip"
+  ibge_amazon_sede : "https://geoftp.ibge.gov.br/organizacao_do_territorio/estrutura_territorial/amazonia_legal/2024/Sedes_Mun_Amazonia_Legal_2024_shp.zip"
+  ibge_states      : "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2024/Brasil/BR_UF_2024.zip"
+  wb_countries     : "https://datacatalogfiles.worldbank.org/ddh-published-v2/0038272/5/DR0095371/World%20Bank%20Official%20Boundaries%20(Shapefiles)/World%20Bank%20Official%20Boundaries%20-%20Admin%200.zip"
